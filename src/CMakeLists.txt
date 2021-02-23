@@ -1,0 +1,5 @@
+MESSAGE(${PROJECT_SOURCE_DIR})
+include_directories(${PROJECT_SOURCE_DIR})
+SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
+aux_source_directory(./ SRCS)
+ADD_EXECUTABLE(test ${SRCS})
